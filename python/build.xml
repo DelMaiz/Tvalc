@@ -1,36 +1,27 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
 <!--
-
  tvalacarta 4
  Copyright 2015 tvalacarta@gmail.com
-
  Distributed under the terms of GNU General Public License v3 (GPLv3)
  http://www.gnu.org/licenses/gpl-3.0.html
-
-
-
  This file is part of tvalacarta 4.
-
  tvalacarta 4 is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
-
  tvalacarta 4 is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
-
  You should have received a copy of the GNU General Public License
  along with tvalacarta 4.  If not, see <http://www.gnu.org/licenses/>.
-
 -->
 <project name="tvalacarta" default="package">
 	<description>tvalacarta</description>
 
-    <property name="version" value="4.1.1"/>
-    <property name="versionboxee" value="6.2"/>
-    <property name="versiondate" value="06/12/2018"/>
+    <property name="version" value="4.1.2"/>
+    <property name="versionboxee" value="6.3"/>
+    <property name="versiondate" value="17/12/2018"/>
     <property name="versionchanges" value="General update"/>
 
     <property name="target" value="../../../dist/tvalacarta/"/>
@@ -70,7 +61,6 @@
         <mkdir dir="${target}/mediaserver/tvalacarta"/>
         <antcall target="copy-mediaserver"/>
         <zip destfile="${target}/mediaserver/tvalacarta-mediaserver-${version}.zip" basedir="${target}/mediaserver"/>
-
         <mkdir dir="${target}/dreambox/tvalacarta"/>
         <antcall target="copy-dreambox"/>
         <zip destfile="${target}/dreambox/tvalacarta-dreambox-${version}.zip" basedir="${target}/dreambox"/>
