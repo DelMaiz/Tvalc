@@ -232,7 +232,7 @@ def update(item):
 
 def get_channel_remote_url(channel_name):
 
-    _remote_channel_url_ = "https://raw.githubusercontent.com/tvalacarta/tvalacarta/master/python/main-classic/"
+    _remote_channel_url_ = "https://raw.githubusercontent.com/DelMaiz/Tvalc/master/python/main-classic/"
 
     if channel_name <> "channelselector":
         _remote_channel_url_+= "channels/"
